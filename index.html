@@ -2,24 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Game Saldo Web</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Login Email OTP</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h2>Game Saldo</h2>
-  <p>Saldo: <span id="saldo">0</span></p>
-
-  <button id="loginBtn">Login dengan Google</button>
-  <button id="logoutBtn" style="display: none;">Logout</button>
-
-  <div id="game" style="display: none;">
-    <div id="character"></div>
-    <div class="controls">
-      <button id="left">←</button>
-      <button id="right">→</button>
-    </div>
-  </div>
-
-  <script type="module" src="script.js"></script>
+  <h2>Login dengan Email (tanpa password)</h2>
+  <input type="email" id="email" placeholder="Masukkan email kamu" />
+  <button onclick="loginWithEmail()">Kirim OTP</button>
+  <p id="message"></p>
 </body>
 </html>
